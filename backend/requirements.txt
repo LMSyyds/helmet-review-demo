@@ -1,0 +1,4 @@
+Flask>=3.1,<4
+waitress>=3.0,<4
+filelock>=3.13,<4
+Pillow>=10

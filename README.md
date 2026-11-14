@@ -6,7 +6,7 @@
 
 ## 获取完整演示包
 
-登录有权限的 GitHub 账号，打开 [v0.1.1 发布页](https://github.com/Liu58666/helmet-review-demo/releases/tag/v0.1.1)，下载 `helmet-review-demo-v0.1.1.zip` 和 `SHA256SUMS.txt`。完整包内含网站源码、构建好的前端、Co-DETR 权重、推理代码、模型配置及随附依赖。GitHub 自动生成的 Source code 压缩包只包含仓库文件。
+打开 [v0.1.1 发布页](https://github.com/LMSyyds/helmet-review-demo/releases/tag/v0.1.1)，下载 `helmet-review-demo-v0.1.1.zip` 和 `SHA256SUMS.txt`。完整包内含网站源码、构建好的前端、Co-DETR 权重、推理代码、模型配置及随附依赖。GitHub 自动生成的 Source code 压缩包只包含仓库文件。
 
 在下载目录运行 `shasum -a 256 -c SHA256SUMS.txt` 核对压缩包。解压后进入项目目录。Apple Silicon Mac 使用 Python 3.11，可执行以下命令准备环境并启动。
 
@@ -32,6 +32,8 @@ Linux 和 Windows 服务器按[部署说明](docs/部署.md)安装对应驱动�
 新机器先根据 [服务器部署与数据维护](docs/部署.md) 配置模型运行环境并构建前端。可独立设置 HELMET_MODEL_DIR、HELMET_DEVICE、HELMET_DATA_DIR、HELMET_PYTHON、HELMET_HOST 和 HELMET_PORT。单进程提供页面、接口和任务队列，网页无需单独启动开发服务器。
 
 ## 准备 100 张照片
+
+[下载园区抓拍原图（白天、夜间各 500 张）](https://github.com/LMSyyds/helmet-review-demo/releases/tag/captures-20261114)。如用于计算正确率，请先为测试照片提供人工核实的标签。
 
 每张原图使用不同的文件名。可以只上传照片；希望现场统计正确率时，同时上传 UTF-8 CSV。文件名需与待测图片一致，包括扩展名。格式见 [标签示例](examples/labels.csv)：
 

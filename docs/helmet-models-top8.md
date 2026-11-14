@@ -36,7 +36,7 @@
 | nguynvlun · helmet-yolov8n | [下载压缩包](https://www.kaggle.com/api/v1/models/nguynvlun/helmet-yolov8n/TensorFlow2/default/1/download) · [作者项目](https://www.kaggle.com/models/nguynvlun/helmet-yolov8n) | `yolov8n_helmet.pt` | 640 px，置信度 0.25，IoU 0.7 |
 | nguynvlun · helmet-yolov8s | [下载压缩包](https://www.kaggle.com/api/v1/models/nguynvlun/helmet-yolov8s/TensorFlow2/default/1/download) · [作者项目](https://www.kaggle.com/models/nguynvlun/helmet-yolov8s) | `yolov8s-helmet.pt` | 640 px，置信度 0.25，IoU 0.7 |
 
-六个 GitHub、Hugging Face 和 Kaggle 下载入口均已通过文件分段读取核验。两个 Co-DETR 权重使用 VNPT 同一个 OneDrive 共享入口，打开后进入 `CODETR-checkpoints`，按上表选择对应文件。该入口在本次命令行检查时返回 HTTP 403。epoch 2 另可通过本仓库的 [v0.1.1 完整演示包](https://github.com/Liu58666/helmet-review-demo/releases/tag/v0.1.1) 获取。
+六个 GitHub、Hugging Face 和 Kaggle 下载入口均已通过文件分段读取核验。两个 Co-DETR 权重使用 VNPT 同一个 OneDrive 共享入口，打开后进入 `CODETR-checkpoints`，按上表选择对应文件。该入口在本次命令行检查时返回 HTTP 403。epoch 2 另可通过本仓库的 [v0.1.1 完整演示包](https://github.com/LMSyyds/helmet-review-demo/releases/tag/v0.1.1) 获取。
 
 ### 评测所用权重的 SHA-256
 

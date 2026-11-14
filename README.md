@@ -2,6 +2,21 @@
 
 汇报人可以提前上传一批抓拍，现场选择照片做真实推理，从原图切换到检测框，再把需要人工判断的事件处理完，查回相应违章记录。所有记录保存在本演示库。
 
+## 获取完整演示包
+
+登录有权限的 GitHub 账号，打开 [v0.1.1 发布页](https://github.com/Liu58666/helmet-review-demo/releases/tag/v0.1.1)，下载 `helmet-review-demo-v0.1.1.zip` 和 `SHA256SUMS.txt`。完整包内含网站源码、构建好的前端、Co-DETR 权重、推理代码、模型配置及随附依赖。GitHub 自动生成的 Source code 压缩包只包含仓库文件。
+
+在下载目录运行 `shasum -a 256 -c SHA256SUMS.txt` 核对压缩包。解压后进入项目目录。Apple Silicon Mac 使用 Python 3.11，可执行以下命令准备环境并启动。
+
+```sh
+python3.11 -m venv .venv
+.venv/bin/python -m pip install --no-index --find-links model/runtime/CoDETR_v1_epoch_2/env/wheels -r model/runtime/CoDETR_v1_epoch_2/env/requirements.txt
+.venv/bin/python -m pip install -r backend/requirements.txt
+./scripts/start.sh
+```
+
+Linux 和 Windows 服务器按[部署说明](docs/部署.md)安装对应驱动和依赖。首次启动自动创建空演示库。
+
 ## 启动网站
 
 已配置好的这台 Mac 可双击项目里的 **启动演示.command** 自动打开浏览器，也可以在终端进入项目目录执行：

@@ -2,6 +2,8 @@
 
 汇报人可以提前上传一批抓拍，现场选择照片做真实推理，从原图切换到检测框，再把需要人工判断的事件处理完，查回相应违章记录。所有记录保存在本演示库。
 
+[头盔模型评测报告与权重下载（前八个模型）](docs/helmet-models-top8.md)
+
 ## 获取完整演示包
 
 登录有权限的 GitHub 账号，打开 [v0.1.1 发布页](https://github.com/Liu58666/helmet-review-demo/releases/tag/v0.1.1)，下载 `helmet-review-demo-v0.1.1.zip` 和 `SHA256SUMS.txt`。完整包内含网站源码、构建好的前端、Co-DETR 权重、推理代码、模型配置及随附依赖。GitHub 自动生成的 Source code 压缩包只包含仓库文件。
